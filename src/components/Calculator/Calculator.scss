@@ -1,0 +1,46 @@
+.wrapper {
+  height: calc(100vh - 177px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calculator {
+  width: 400px;
+  .calc-screen {
+    background-color: white;
+    overflow: auto;
+  }
+  .calc-screen .text-wrapper {
+    min-height: 29px;
+    width: fit-content;
+    position: relative;
+    // Make a cursor
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: -6px;
+      height: calc(100% - 2px);
+      width: 2px;
+      background-color: rgba(17, 9, 9, 0.747);
+      border-radius: 4px;
+      animation: cursor-fade .4s alternate infinite;
+    }
+  }
+  .calc-body {
+    background-color: rgb(54, 48, 48);
+  }
+  .calc-btn {
+    border-radius: 12px;
+    background-color: rgb(184, 236, 236);
+    border: none;
+    outline: none;
+  }
+}
+
+// Animations
+@keyframes cursor-fade {
+  to {
+    opacity: 0;
+  }
+}
