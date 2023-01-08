@@ -1,6 +1,6 @@
 # Calculator
 
-#### [Here is a preview of the app](https://abdoshbr3322.github.io/React-Todo)
+#### [Here is a preview of the app](https://abdoshbr3322.github.io/Calculator)
 
 ### To Initialize this app follow the following instructions
 
